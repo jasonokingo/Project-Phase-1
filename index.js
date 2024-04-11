@@ -94,19 +94,19 @@ function addCharacter(name, image, species, status, location) {
 }
 
 // Listen for form submission to add a new character
-// document.getElementById('addCharacterForm').addEventListener('submit', function(event) {
-//     event.preventDefault(); //This line prevents the default form submission behavior.
-//     const name = document.getElementById('newCharacterName').value;
-//     const image = document.getElementById('newCharacterImage').value;
-//     const species = document.getElementById('newCharacterSpecies').value;
-//     const status = document.getElementById('newCharacterStatus').value;
-//     const location = document.getElementById('newCharacterLocation').value;
+document.getElementById('addCharacterForm').addEventListener('submit', function(event) {
+    event.preventDefault(); //This line prevents the default form submission behavior.
+    const name = document.getElementById('newCharacterName').value;
+    const image = document.getElementById('newCharacterImage').value;
+    const species = document.getElementById('newCharacterSpecies').value;
+    const status = document.getElementById('newCharacterStatus').value;
+    const location = document.getElementById('newCharacterLocation').value;
 
-//     addCharacter(name, image, species, status, location);
+    addCharacter(name, image, species, status, location);
 
-//     //This line resets the form fields after adding a new character.
-//     this.reset();
-// });
-// //This line calls the fetchCharacters function to fetch and display characters when the page is loaded.
-// fetchCharacters();
+    //This line resets the form fields after adding a new character.
+    this.reset();
+});
+//This line calls the fetchCharacters function to fetch and display characters when the page is loaded.
+fetchCharacters();
 
