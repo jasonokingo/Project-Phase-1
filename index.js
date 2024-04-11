@@ -105,7 +105,7 @@ document.getElementById('addCharacterForm').addEventListener('submit', function(
     addCharacter(name, image, species, status, location);
 
     //This line resets the form fields after adding a new character.
-    this.reset()
+    this.reset();
 });
 //This line calls the fetchCharacters function to fetch and display characters when the page is loaded.
 fetchCharacters();
