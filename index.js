@@ -1,20 +1,20 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//     const characterList = document.getElementById("characters")//select an element with the id characters and stores it in the characterList variable.
-// })// Create an eventlistener that loads the DOM content
+document.addEventListener("DOMContentLoaded", () => {
+    const characterList = document.getElementById("characters")//select an element with the id characters and stores it in the characterList variable.
+})// Create an eventlistener that loads the DOM content
 
-// let seriesCharacters = [];// Create an empty array seriesCharacters to store the fetched characters from the API.
+let seriesCharacters = [];// Create an empty array seriesCharacters to store the fetched characters from the API.
 
-// //Creates an asynchronous function fetchCharacters to fetch character data from the API.
-// async function fetchCharacters() {
-// //We use fetch which fetches data from the Rick and Morty API using the fetch function.
-//     const response = await fetch('https://rickandmortyapi.com/api/character');
-// //Gives response data into JSON format and stores it in the data variable.
-//     const data = await response.json();
-// // assigns the array of characters from the API response to the seriesCharacters variable.
-//     seriesCharacters = data.results;
-// // Function to Show the characters
-//     showCharacters();
-// }
+//Creates an asynchronous function fetchCharacters to fetch character data from the API.
+async function fetchCharacters() {
+//We use fetch which fetches data from the Rick and Morty API using the fetch function.
+    const response = await fetch('https://rickandmortyapi.com/api/character');
+//Gives response data into JSON format and stores it in the data variable.
+    const data = await response.json();
+// assigns the array of characters from the API response to the seriesCharacters variable.
+    seriesCharacters = data.results;
+// Function to Show the characters
+    showCharacters();
+}
 //This line defines the showCharacters function to display characters on the webpage.
 function showCharacters() {
     const charactersInformation = document.getElementById('characters');
