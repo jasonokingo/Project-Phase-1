@@ -72,20 +72,20 @@ function searchCharacter() {
     }
 }
 // Function to display character details
-// function showCharacterDetails(character) {
-//     const showName = document.getElementById('Name');
-//     const showSpecies = document.getElementById('Species');
-//     const showStatus = document.getElementById('Status');
-//     const showLocation = document.getElementById('Location');
+function showCharacterDetails(character) {
+    const showName = document.getElementById('Name');
+    const showSpecies = document.getElementById('Species');
+    const showStatus = document.getElementById('Status');
+    const showLocation = document.getElementById('Location');
 
-//     showName.textContent = character.name;
-//     showSpecies.textContent = `Species: ${character.species}`;
-//     showStatus.textContent = `Status: ${character.status}`;
-//     showLocation.textContent = `Location: ${character.location.name}`;
+    showName.textContent = character.name;
+    showSpecies.textContent = `Species: ${character.species}`;
+    showStatus.textContent = `Status: ${character.status}`;
+    showLocation.textContent = `Location: ${character.location.name}`;
 
-//     const showCharacterDetailsDiv = document.getElementById('characterDetails');
-//     showCharacterDetailsDiv.style.display = 'block'; // Display the details
-// }
+    const showCharacterDetailsDiv = document.getElementById('characterDetails');
+    showCharacterDetailsDiv.style.display = 'block'; // Display the details
+}
 // Function to add a new character
 function addCharacter(name, image, species, status, location) {
     const newCharacter = { name, image, species, status, location };
