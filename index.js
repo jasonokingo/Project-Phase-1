@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let seriesCharacters = [];// Create an empty array seriesCharacters to store the fetched characters from the API.
 
-//Creates an asynchronous function fetchCharacters to fetch character data from the API.
 async function fetchCharacters() {
 //We use fetch which fetches data from the Rick and Morty API using the fetch function.
     const response = await fetch('https://rickandmortyapi.com/api/character');
