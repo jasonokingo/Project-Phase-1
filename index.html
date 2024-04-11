@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty News</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a class="logo" href="index.html">Rick And Morty Blog</a>
+            </div>
+        </nav>
+        <div class="about-us">
+            <h1>About Us</h1>
+            <p>We are a web application that displays the characters involved in the Rick and Morty series and displays a summary of information about them. We encourage you to also add more characters and a summary of information about them.</p>
+        </div>
+    </header>
+    <br>
+    <div id="characters"></div>
+    <div class="character">
+        <div id="characterDetails">
+            <h2 id="Name"></h2>
+            <p id="Species"></p>
+            <p id="Status"></p>
+            <p id="Location"></p>
+        </div>
+    </div>
+    <!-- Form for adding new characters -->
+    <form id="addCharacterForm" class="characterDetails">
+        <label for="newCharacterName">Name</label>
+        <input type="text" placeholder="Name" id="newCharacterName">
+        <label for="newCharacterImage">Image</label>
+        <input type="url" placeholder="Image URL" id="newCharacterImage">
+        <label for="newCharacterSpecies">Species</label>
+        <input type="text" placeholder="Species" id="newCharacterSpecies">
+        <label for="newCharacterStatus">Status</label>
+        <input type="text" placeholder="Status" id="newCharacterStatus">
+        <label for="newCharacterLocation">Location</label>
+        <input type="text" placeholder="Location" id="newCharacterLocation">
+        <button type="submit">Add Character</button> <!-- Submit button to add character -->
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>
