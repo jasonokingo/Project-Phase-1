@@ -15,7 +15,7 @@ nav {
    height: 80px;
    color: #333;
 }
-/* .navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,4 +74,4 @@ nav {
     color:  rgb(186, 84, 218);
     background-color: black; 
     justify-content: center;
-} */
+}
