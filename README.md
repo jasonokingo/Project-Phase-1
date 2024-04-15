@@ -6,6 +6,7 @@ By: Jason Tyler Okingo
 
 Description:
 This is a web application that enables the user to get a summary of information about rick and morty series,to be able to go through a list of different characters and enables them to add new characters and delete the characters as the user pleases
+
 Installation 
 You use git clone to be able to download the documents in the GitHub
 
